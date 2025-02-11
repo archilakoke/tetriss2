@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+    background: linear-gradient(to bottom right, #1a1a2e, #16213e);
+    font-family: Arial, sans-serif;
+    touch-action: manipulation;
+    overflow: hidden;
+}
+
+.game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    padding-top: 60px; /* Espacio para el banner */
+}
+
+.ad-container {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+    text-align: center;
+}
+
+canvas {
+    border: 2px solid #fff;
+    border-radius: 4px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+}
+
+.score-container {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+}
+
+.controls {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+button {
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    padding: 15px 25px;
+    color: white;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:active {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+#rotateBtn {
+    grid-column: 2;
+}
+
+.menu-buttons {
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+#exitBtn {
+    background: rgba(255, 0, 0, 0.3);
+}
+
+#continueBtn {
+    background: rgba(0, 255, 0, 0.3);
+} 
